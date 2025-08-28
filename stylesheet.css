@@ -626,3 +626,128 @@ section{
     padding: 10px;
     border-radius: 0.5rem;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container1 {
+        width: 90%;
+        padding: 40px 10px;
+        margin-left: 0;
+        height: auto;
+    }
+    .about-col-1 img,
+    .profile-image {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .education {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .edu-col {
+        min-width: 220px;
+        max-width: 90vw;
+    }
+    .container1 {
+        padding: 20px 5vw;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+        padding-left: 0;
+        gap: 2rem;
+    }
+    .contact-text h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 10px 5vw;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .logo {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content h3 {
+        font-size: 1.2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    .about-col-1 img,
+    .about-col-2 img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .edu-col {
+        width: 100%;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+        padding-left: 0;
+        gap: 2rem;
+    }
+    .contact-text h2 {
+        font-size: 48px;
+    }
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    .contact-text p {
+        font-size: 16px;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    .contact-form form .send {
+        padding: 12px 50px;
+        font-size: 16px;
+    }
+    .last-text p {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    .top {
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+    .top i {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
